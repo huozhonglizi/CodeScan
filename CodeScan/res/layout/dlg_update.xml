@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 升级 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#15000000" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_rey1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_interation_bg" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center"
+            android:text="版本升级"
+            android:textColor="@color/black"
+            android:textSize="16.5dp" />
+
+        <TextView
+            android:id="@+id/dialog_titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_title"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center"
+            android:text="最新版本：4.3beta版"
+            android:textSize="13.5dp" />
+
+        <TextView
+            android:id="@+id/upContent2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_titles"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="新版本更新功能"
+            android:textSize="12dp" />
+
+        <com.wl.codescan.view.MyProgress
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/upContent2"
+            android:max="100"
+            android:minHeight="7.5dp"
+            android:progressDrawable="@drawable/barcolor" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_rey1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_btncancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_exchange"
+            android:text="取消"
+            android:textColor="#2f63ac" />
+
+        <Button
+            android:id="@+id/dialog_btnok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_cancel"
+            android:text="升级"
+            android:textColor="#c30d23" />
+    </LinearLayout>
+
+</RelativeLayout>
